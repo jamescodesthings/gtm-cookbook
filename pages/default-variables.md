@@ -11,7 +11,7 @@ Create a `Custom Variable` in tag manager, name it `DEBUG_MODE` and set its type
 
 ### Usage
 {% raw %}
-`{{DEBUG_MODE}}` will return true if you're Previewing your workspace changes in GTM.
+`{{DEBUG_MODE}}` will return `true` if you're Previewing your workspace changes in GTM.
 {% endraw %}
 
 ### Example in Tag
@@ -99,8 +99,47 @@ In another function variable, or tag.
 {% endraw %}
 
 ## LOAD_SCRIPT
+This is a really useful one with some caveats. The biggest issue with loading stuff through GTM is timing, your script must load before you expect to use it.
 
+### Configuration
+- Create a `Custom Variable` in tag manager  
+- Name it `LOAD_SCRIPT`  
+- Set its Type to `Custom Javascript`  
+- Paste this in there.  
 
+*todo:* revise to ensure usage makes sense and works.
+{% raw %}
+```
+function(){
+  return function(scriptPath){
+      {{CONSOLE_LOG}}('Loading: ', scriptPath, loaded);
+
+      var el = document.createElement('script');
+      el.src = scriptPath;
+      el.async = 'true';
+      el.addEventListener('load', function() {
+        {{CONSOLE_LOG}}('Loaded: ', scriptPath);
+        loaded();
+      });
+      document.head.appendChild(el);
+
+    return el;
+    }
+}
+```
+{% endraw %}
+
+### Usage
+In a tag:
+
+{% raw %}
+```
+// Load a JS file from somewhere
+{{LOAD_SCRIPT}}('Path/to/your/script.js', function(){
+  // You're done loading here, continue.
+});
+```
+{% endraw %}
 
 
 
