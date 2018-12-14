@@ -1,0 +1,28 @@
+{
+  "name": "gtm-cookbook",
+  "version": "1.0.0",
+  "description": "The Open source cookbook for Google Tag Manager",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamescodesthings/gtm-cookbook.git"
+  },
+  "keywords": [
+    "tag",
+    "manager",
+    "gtm",
+    "guides"
+  ],
+  "author": "Packt Publishing LTD",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jamescodesthings/gtm-cookbook/issues"
+  },
+  "homepage": "https://github.com/jamescodesthings/gtm-cookbook#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.3"
+  }
+}

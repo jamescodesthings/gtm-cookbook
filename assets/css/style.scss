@@ -3,4 +3,40 @@
 
 @import "{{ site.theme }}";
 
+// Custom.scss
+// Option B: Include parts of Bootstrap
+
+// Required
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+// Optional
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/code";
+@import "bootstrap/scss/grid";
+
+// Components we want to use
+@import "bootstrap/scss/buttons";
+
 // Custom Stuff can go here
+
+// Variables
+$theme-colors: (
+  "primary": #373cd9,
+  "danger": #ff4025
+);
+$button-bg-color: theme-color("primary");
+$button-text-color: gray("100");
+
+// Renaming because we're going to use a page title in the header
+#page_title {
+  @extend #project_title;
+}
+
+.btn-back {
+  @extend .btn;
+  @include button-variant($button-bg-color, $button-text-color);
+}

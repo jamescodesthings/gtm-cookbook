@@ -6,4 +6,5 @@ relative_links:
   collections: true
 include:
   - readme.md
-
+sass:
+  sass_dir: ./node_modules

@@ -1,7 +1,9 @@
-When you're done [Go Back](../readme.md).
+---
+title: Useful Variables
+layout: default
+---
 
-# Useful Variables
-These are useful when developing complex things in GTM.
+When you're done [Go Back](../readme.md).
 
 ## DEBUG_MODE
 *Name:* `DEBUG_MODE`
@@ -18,8 +20,7 @@ Create a `Custom Variable` in tag manager, name it `DEBUG_MODE` and set its type
 
 ### Example in Tag
 {% raw %}
-```
-
+```javascript
   if({{DEBUG_MODE}}) {
     // Do something only if you're Previewing your Workspace Changes
   }
@@ -41,7 +42,7 @@ This is a cosntant that returns the CDN url for jQuery 3. You can choose to load
 - Paste this in there, see what it does, it's simple and effective.  
 
 {% raw %}
-```
+```javascript
 function(){
   return 'https://code.jquery.com/jquery-3.3.1.min.js';
 }
@@ -52,7 +53,7 @@ function(){
 Throw it into a [Load Script](#load_script) function variable.
 
 {% raw %}
-```
+```javascript
 // Loads jQuery from your CDN Link
 {{LOAD_SCRIPT}}({{JQUERY_CDN}})
 ```
@@ -81,7 +82,7 @@ If you're really brave you can hook into `console` and replace all the methods w
 - Paste this in there.  
 
 {% raw %}
-```
+```javascript
 function() {
   return function() {
       var args = arguments;
@@ -95,7 +96,7 @@ function() {
 In another function variable, or tag.
 
 {% raw %}
-```
+```javascript
 {{CONSOLE_LOG}}('Loading:', someJsVariable);
 ```
 {% endraw %}
@@ -111,7 +112,7 @@ This is a really useful one with some caveats. The biggest issue with loading st
 
 *todo:* revise to ensure usage makes sense and works.
 {% raw %}
-```
+```javascript
 function(){
   return function(scriptPath){
       {{CONSOLE_LOG}}('Loading: ', scriptPath, loaded);
@@ -135,7 +136,7 @@ function(){
 In a tag:
 
 {% raw %}
-```
+```javascript
 // Load a JS file from somewhere
 {{LOAD_SCRIPT}}('Path/to/your/script.js', function(){
   // You're done loading here, continue.
@@ -151,7 +152,7 @@ In a tag:
 
 *todo:* remove this, it's for the lazy (James).
 {% raw %}
-```
+```javascript
 
 ```
 {% endraw %}
