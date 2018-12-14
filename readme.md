@@ -6,6 +6,7 @@ This project is licensed under the terms of the MIT license.
 ## Contents
 If you want to jump straight in, take a look here.
 
+[Using Tag Manager](pages/basics.md)  
 [Naming Conventions](pages/naming-conventions.md)  
 [Useful Variables](pages/default-variables.md)  
 
