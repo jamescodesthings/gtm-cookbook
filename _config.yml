@@ -8,3 +8,4 @@ include:
   - readme.md
 sass:
   sass_dir: ./node_modules
+baseurl: '/gtm-cookbook'

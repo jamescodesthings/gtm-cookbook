@@ -25,11 +25,11 @@
 
 // Variables
 $theme-colors: (
-  "primary": #373cd9,
+  "primary": #0090ff,
   "danger": #ff4025
 );
 $button-bg-color: theme-color("primary");
-$button-text-color: gray("100");
+$button-border-color: darken($button-bg-color, 10%);
 
 // Renaming because we're going to use a page title in the header
 #page_title {
@@ -38,5 +38,5 @@ $button-text-color: gray("100");
 
 .btn-back {
   @extend .btn;
-  @include button-variant($button-bg-color, $button-text-color);
+  @include button-variant($button-bg-color, $button-border-color);
 }
