@@ -3,7 +3,7 @@ title: Useful Variables
 layout: default
 ---
 
-When you're done [Go Back](../readme.md).
+{% include back.html %}
 
 ## DEBUG_MODE
 *Name:* `DEBUG_MODE`

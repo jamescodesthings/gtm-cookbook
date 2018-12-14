@@ -1,12 +1,12 @@
 ---
 title: Using Tag Manager
+tagline: How to get around the UI
 layout: default
 ---
 
-# Using Tag Manager
-A quick guide on how to use the Tag Manager UI, where to go, all that jazz.
+{% include back.html %}
 
-## Creating a User-Defined Variable
+# Creating a User-Defined Variable
 - Open Your Workspace in [Tag Manager](https://tagmanager.google.com)  
 - Go to `Variables`  
 - Scroll Down to the `User-Defined Variables` section  
@@ -16,7 +16,7 @@ A quick guide on how to use the Tag Manager UI, where to go, all that jazz.
   - Most of the time you'll be using `Page Variables` > `Custom Javascript`  
   - `Debug Mode` is in `Container Data`  
 
-### Format
+## Format
 You can change the output format for your variable. Most of the time you don't want to, but let's say it's `null` and you want a safe `boolean`.  
 - Open the Variable  
 - Edit the `Format`  

@@ -36,7 +36,18 @@ $button-border-color: darken($button-bg-color, 10%);
   @extend #project_title;
 }
 
+#page_tagline {
+  @extend #project_tagline;
+}
+
 .btn-back {
+  //@include float-right;
+  //@include clearfix;
+
   @extend .btn;
   @include button-variant($button-bg-color, $button-border-color);
+
+  position: absolute;
+  top: 0;
+  left: 0;
 }

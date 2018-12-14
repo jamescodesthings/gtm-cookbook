@@ -1,6 +1,10 @@
-# About
-The Open source cookbook for Google Tag Manager.
+---
+title: The GTM Cookbook
+tagline: The Open source cookbook for Google Tag Manager
+layout: default
+---
 
+# About
 This project is licensed under the terms of the MIT license.
 
 ## Contents

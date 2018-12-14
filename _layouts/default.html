@@ -22,9 +22,7 @@
           <!-- <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1> -->
           <!-- <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2> -->
           <h1 id="page_title">{{ page.title }}</h1>
-          {% if page.url != '/readme.html' %}
-            <a class="btn-back" href="{{site.url}}{{site.baseurl}}/readme.html">Go Back</a>
-          {% endif %}
+          <h1 id="page_tagline">{{ page.tagline }}</h1>
 
           {% if site.show_downloads %}
             <section id="downloads">
