@@ -1,4 +1,7 @@
-When you're done [Go Back](../readme.md).
+---
+title: Naming Conventions
+layout: default
+---
 
 # Naming Conventions
 Use these, they're good.

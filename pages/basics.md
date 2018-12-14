@@ -1,4 +1,7 @@
-When you're done [Go Back](../readme.md).
+---
+title: Using Tag Manager
+layout: default
+---
 
 # Using Tag Manager
 A quick guide on how to use the Tag Manager UI, where to go, all that jazz.

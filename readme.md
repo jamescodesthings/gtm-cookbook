@@ -1,4 +1,4 @@
-# The GTM Cookbook
+# About
 The Open source cookbook for Google Tag Manager.
 
 This project is licensed under the terms of the MIT license.
@@ -15,7 +15,7 @@ Let's say, for whatever reason; you're going to hack a load of front-end changes
 
 This is hopefully the cookbook for you. It should give you what you need to structure Tag Manager tags, include the scripts you need, get the data you want and replace all the things.
 
-## Background
+## Other useful resources
 Tag manager is Quirky, through the years there have been a few wonderful posts on how to do tricky stuff in GTM. Here's the ones I use.
 
 ### Variables
