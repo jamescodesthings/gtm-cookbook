@@ -1,7 +1,7 @@
 # Useful Variables
 These are useful when developing complex things in GTM.
 
-## Debug Mode
+## DEBUG_MODE
 *Name:* `DEBUG_MODE`
 
 This is an alias for the variable `Debug Mode` which just doesn't fit the naming conventions we use in GTM. Alaising this variable makes your tags look cleaner.
@@ -46,6 +46,16 @@ function(){
 ```
 {% endraw %}
 
+### Usage (tag)
+Throw it into a [Load Script](#load_script) function variable.
+
+{% raw %}
+```
+// Loads jQuery from your CDN Link
+{{LOAD_SCRIPT}}({{JQUERY_CDN}})
+```
+{% endraw %}
+
 # Lookup Tables
 Lookup Tables are great for Environment based configuration.
 
@@ -56,4 +66,51 @@ Lookup Tables are great for Environment based configuration.
 GTM Custom Javascript Variables are a function that returns a `whatever`.  
 Here's some that make life easier.
 
-## Console Log
+## CONSOLE_LOG
+This is a really useful one: console.log only if you're in Preview Mode.
+
+It checks `DEBUG_MODE` and if `true` it passes on the input to `console.log`. You can also override the other console methods if you like.
+If you're really brave you can hook into `console` and replace all the methods within a `closure`, up to you, it's dangerous but useful.
+
+### Configuration
+- Create a `Custom Variable` in tag manager  
+- Name it `CONSOLE_LOG`  
+- Set its Type to `Custom Javascript`  
+- Paste this in there.  
+
+{% raw %}
+```
+function() {
+  return function() {
+      var args = arguments;
+        if({{DEBUG_MODE}}) console.log.apply(console, arguments);
+    }
+}
+```
+{% endraw %}
+
+### Usage
+In another function variable, or tag.
+
+{% raw %}
+```
+{{CONSOLE_LOG}}('Loading:', someJsVariable);
+```
+{% endraw %}
+
+## LOAD_SCRIPT
+
+
+
+
+
+
+
+
+
+*todo:* remove this, it's for the lazy (James).
+{% raw %}
+```
+
+```
+{% endraw %}
