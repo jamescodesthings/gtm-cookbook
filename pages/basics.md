@@ -11,3 +11,9 @@ A quick guide on how to use the Tag Manager UI, where to go, all that jazz.
   - Most of the time you'll be using `Page Variables` > `Custom Javascript`  
   - `Debug Mode` is in `Container Data`  
 
+### Format
+You can change the output format for your variable. Most of the time you don't want to, but let's say it's `null` and you want a safe `boolean`.  
+- Open the Variable  
+- Edit the `Format`  
+- Choose `Convert null to` and enter `false` in the input box  
+
