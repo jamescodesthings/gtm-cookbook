@@ -10,12 +10,17 @@ This is an alias for the variable `Debug Mode` which just doesn't fit the naming
 Create a `Custom Variable` in tag manager, name it `DEBUG_MODE` and set its type to `Debug Mode` which is in `Container Data`
 
 ### Usage
+{% raw %}
 `{{DEBUG_MODE}}` will return true if you're Previewing your workspace changes in GTM.
+{% endraw %}
 
 ### Example in Tag
+{% raw %}
 ```
+
   if({{DEBUG_MODE}}) {
     // Do something only if you're Previewing your Workspace Changes
   }
  
 ```
+{% endraw %}
