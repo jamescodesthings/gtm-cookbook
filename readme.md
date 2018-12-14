@@ -13,5 +13,5 @@ First, and probably the most useful, is the [Variables guide](https://www.simoah
 
 This guide will tell you absolutely everything you can do with GTM Variables.
 
-[PDF Copy from 14/12/18]({{site.baseurl}}/pdf/Variables.pdf)
+[PDF Copy from 14/12/18](pdf/Variables.pdf)
 
