@@ -1,4 +1,4 @@
-# Default Variables
+# Useful Variables
 These are useful when developing complex things in GTM.
 
 ## Debug Mode
@@ -24,3 +24,9 @@ Create a `Custom Variable` in tag manager, name it `DEBUG_MODE` and set its type
  
 ```
 {% endraw %}
+
+# Function Variables
+GTM Custom Javascript Variables are a function that returns a `whatever`.  
+Here's some that make life easier.
+
+## Console Log
