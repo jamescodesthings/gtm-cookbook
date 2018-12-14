@@ -6,8 +6,8 @@ This project is licensed under the terms of the MIT license.
 ## Contents
 If you want to jump straight in, take a look here.
 
-[Naming Conventions](pages/naming-conventions.md)
-[Useful Variables](pages/default-variables.md)
+[Naming Conventions](pages/naming-conventions.md)  
+[Useful Variables](pages/default-variables.md)  
 
 ## Why?
 Let's say, for whatever reason; you're going to hack a load of front-end changes into a website where CMS access and function is limited. You've chosen to use GTM because it's there, possible and probably the most straight forward way. Without using your A/B testing framework as an overlay generator.
