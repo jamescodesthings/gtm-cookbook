@@ -1,9 +1,10 @@
-# Google Tag Manager: Cookbook
-The GTM Cookbook for Javascript developers.
+# The GTM Cookbook
+An Open source cookbook for Google Tag Manager.
 
+## Why?
 Let's say, for whatever reason; you're going to hack a load of front-end changes into a website where CMS access and function is limited. You've chosen to use GTM because it's there, possible and probably the most straight forward way. Without using your A/B testing framework as an overlay generator.
 
-This is hopefully the cookbook for you. It should give you what you need to structure Tag Manager tags, include the scripts you need, get the data you want and replace things all over the shop.
+This is hopefully the cookbook for you. It should give you what you need to structure Tag Manager tags, include the scripts you need, get the data you want and replace all the things.
 
 ## Useful Links and Resources
 Tag manager is Quirky, through the years there have been a few wonderful posts on how to do tricky stuff in GTM. Here's the ones I use.
