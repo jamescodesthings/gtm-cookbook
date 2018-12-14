@@ -2,11 +2,9 @@
 Use these, they're good.
 
 ## Conventions to use
-| Type          | Convetion
-| ------------- |-------------
-| Variable      | `SNAKE_CASE_ALL_CAPS`
-| Tag           | `PascalCase`
-| Trigger       | `camelCase`
+- **Variable**: `SNAKE_CASE_ALL_CAPS`  
+- **Tag**: `PascalCase`  
+- **Trigger**: `camelCase`  
 
 ## Why?
 Tag Manager's Search function is pretty good. Searching for `jquery` when you have a tag, variable and trigger all defined with jquery in the name could be difficult. With a decent naming convetion you'll know which is which.
